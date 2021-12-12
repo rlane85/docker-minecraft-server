@@ -1,4 +1,5 @@
 /data/
+/compose/minecraft-data/
 /.idea/
 *.iml
 /gh-md-toc

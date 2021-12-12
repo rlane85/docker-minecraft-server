@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  mc:
+    image: dockerminecraftserver
+    environment:
+      EULA: "true"
+      TYPE: PAPER
+      VERSION: 1.18
+      SPIGET_RESOURCES: 274,81534
+      CONSOLE: "false"
+      DEBUG: true
+    ports:
+      - 25565:25565
+      - 8123:8123
+    volumes:
+      - ./minecraft-data:/data
+
+volumes:
+  mc-paper: null
+
